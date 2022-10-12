@@ -1,0 +1,12 @@
+name: daily-cron
+on:
+  schedule:
+    - cron: '0 1 3 * *'
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call apify
+        run: |
+          curl --request POST \
+          --url 'https://yoursite.com/api/cron' \
