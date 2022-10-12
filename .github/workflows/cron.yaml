@@ -9,4 +9,4 @@ jobs:
       - name: Call apify
         run: |
           curl --request POST \
-          --url 'https://yoursite.com/api/cron' \
+          --url 'https://how-many-two.vercel.app/api/cron' \
